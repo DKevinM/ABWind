@@ -9,12 +9,13 @@
       margin: 0;
       background: black;
     }
-    canvas.wind-canvas {
-      position: absolute;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-    }
+  canvas.wind-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 400; /* Make sure it's above the map tiles */
+    pointer-events: none;
+  }
   </style>
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
